@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../index.css'
 import { connect } from 'react-redux';
 import { increment, decrement } from '../actions';
 
@@ -18,8 +19,8 @@ class Counter extends Component {
         // Upon clicking these buttons, the count
         // should decrement or increment accordingly
         return (
-            <p>
-                Clicked: {this.props.count} times
+            <p className= 'Counter'>
+                Clicked: {this.props.count} times <br /><br /><br />
                 <button onClick={() => {this.props.increment() }}>
                     +
                 </button>
